@@ -1,0 +1,128 @@
+.calls {
+    font-family: sans-serif;
+    padding: 6.5rem 2rem 2rem 2rem;
+    /* padding-left: 1.4rem; */
+    text-align: center;
+}
+.calls p{
+   margin-top:10px;
+   font-size:18px;
+}
+
+button{
+    font-size:18px;
+    height:6vh;
+    width:10%;
+    margin-top:15px;
+    border-radius:5px;
+    cursor: pointer;
+    border:none;
+    text-decoration: none;
+}
+button:hover {
+    /* border: 1px solid rgb(101, 17, 17); */
+    background: rgb(101, 17, 17);
+    transition: 0.3s;
+    color:white;
+}
+.tracks-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: auto;
+    margin-top: 3.5rem;
+    column-gap: 2rem;
+    justify-content: center;
+    row-gap: 3rem;
+}
+
+.tracks-table h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    background-color: #162254;
+    height: 7vh;
+    margin-top: 0;
+    border-radius: 10px 10px 0px 0px;
+    padding:0 1rem;
+}
+
+.tracks-column {
+    width: 23%;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    color: #162254;
+}
+
+.tracks-table ul li {
+    list-style: inside;
+    padding: 0.5rem 1rem;
+}
+
+
+
+
+
+/* ---------media queries------------ */
+/* @media(max-width:1137px) {
+    .tracks-table h3 {
+        height: fit-content;
+        padding: 0.5rem;
+    }
+}
+
+    .tracks-column{
+        width:40%;
+    }
+} */
+@media (max-width:1264px) {
+    .tracks-column{
+        width:40%;
+    }
+    button{
+        width:30vw;
+    }
+}
+@media (max-width:789px) {
+    .tracks-column{
+        width:47%;
+    }
+    button{
+        width:50vw;
+    }
+}
+@media(max-width:597px){
+    .tracks-column{
+        width:100%;
+    }
+    button{
+        width:50vw;
+    }
+}
+@media(max-width:287px){
+    .tracks-table h3{
+        height:10vh;
+    }
+    button{
+        width:50vw;
+    }
+}
+h2{
+    display:none;
+}
+@media(max-width:777px){
+    h2 {
+        display:block;
+        background-color: #0a0428ef;
+        width: 40vw;
+        color: white;
+        padding: 0.5rem;
+        /* padding-left:3rem; */
+        margin: auto;
+        border-radius: 0.4rem;
+        margin-bottom:2rem;
+    }
+}
